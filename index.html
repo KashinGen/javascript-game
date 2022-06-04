@@ -1,0 +1,54 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="game" >
+    <div class="game__top">
+      <div class="game__health"
+      >
+        <div  class="game__health-empty"></div>
+        <div
+          class="game__health-bar"
+          id="playerHealth"
+
+        ></div>
+      </div>
+      <div
+        class="game__timer"
+        id="timer">
+        10
+      </div>
+      <div class="game__health game__health--enemy" >
+        <div  class="game__health-empty" ></div>
+        <div
+          id="enemyHealth"
+          class="game__health-bar game__health-bar--enemy"
+
+        ></div>
+      </div>
+      <div></div>
+    </div>
+    <div
+      id="displayText"
+      class="game__result">
+      Tie
+    </div>
+    <canvas></canvas>
+  </div>
+  <!-- Для плавной анимации убавки здоровья -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>
